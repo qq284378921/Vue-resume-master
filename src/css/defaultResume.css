@@ -1,0 +1,352 @@
+ 
+ /* loginedUser */
+ main .loginedUser {
+    position: absolute;
+    top: 0;
+    left: 100px;
+    z-index: 10;
+}
+/* resume */
+main .resume {
+   max-width: 800px;
+   background-color: #fff;
+   box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+   margin: 0 auto;
+   padding: 20px;
+   overflow: hidden;
+   font-size: 14px;
+   color: #666;
+}
+.resume h2 {
+   text-align: center;
+   margin-bottom: 10px;
+   font-size: 30px;
+}
+.resume h3 {
+   font-size: 18px;
+}
+.resume section {
+   margin-top: 20px ;
+   padding: 10px;
+}
+.resume section ul {
+    margin-left: 10px;
+    border-top: 2px solid #ccc;
+}
+.resume section:first-child {
+   border: 0;
+}
+/* profile */
+.profile {
+    display: flex;
+}
+
+.profile h2 { 
+    text-align: center;
+    font-size: 35px;
+    font-weight: normal;
+    min-width: 180px;
+    line-height: 120px;
+    color: #fff;
+    background-color: #666;
+    margin: 0;
+}
+.profile .profileData {
+    width: 320px;
+    padding: 10px;
+    padding-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #999;
+}
+.profile .profileData > p{
+    width: 50%;
+}
+.age .editableSpan input,
+.sex .editableSpan input{
+    width: 50px;
+}
+.profile > h3 {
+    display: flex;
+    border-bottom: 1px solid #999;    
+    font-size: 18px;
+    justify-content: space-between;
+    align-items: center;
+}
+.profile > h3 > span {
+    text-align: center;
+    display: inline-block;
+    width: 150px;
+    padding: 0 10px;
+}
+.profile > h3:after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 140px;
+    background: url(../img/photo.png) no-repeat ;
+    background-size: 100px 140px;
+}
+/* education */
+.education {
+    display: flex;
+}
+.education h3 {
+    padding: 10px;
+    min-height: 80px;
+    position: relative;
+    border-right: 2px solid #999;
+}
+.education h3::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 20px;
+    height: 30px;
+    transform: translate(50% ,-50%);
+    background-color: #999;
+}
+.education ul {
+    flex: 1;
+    padding: 10px 10px 10px 20px;
+}
+.education ul li {
+   position: relative;
+   display: flex;
+   justify-content: space-between;
+   padding-top: 6px;
+}
+.education ul li > span {
+   padding-right: 10px;
+   display: inline-block;
+}
+.education ul li span.school {
+   font-weight: bold;
+   min-width: 100px;
+}
+.education ul li span.profession {
+   min-width: 150px;
+}
+.education ul li span.degree {
+   min-width: 50px;
+}
+.education ul li span.time {
+   min-width: 100px;    
+   padding-right: 20px;
+}
+.education ul li span.remove {
+   padding: 0;
+   cursor: pointer;    
+   position: absolute;
+   top: 3px;
+   right: 8px;
+}
+.education li.addEducation {
+   margin-top: 10px;
+   border-top: 1px solid #999;
+   cursor: pointer;
+   display: block;
+   text-align: center;
+}
+.education span.remove:hover,
+.education .addEducation:hover
+{
+   text-shadow:0px 0px 8px #888;
+}
+/* skills */
+
+.skills {
+    display: flex;
+}
+.skills h3 {
+    padding: 10px;
+    min-height: 80px;
+    position: relative;
+    border-right: 2px solid #999;
+}
+.skills h3::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 20px;
+    height: 30px;
+    transform: translate(50% ,-50%);
+    background-color: #999;
+}
+.skills ul{
+    flex: 1;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: space-between;
+   max-width: 800px;
+   padding: 10px 10px 10px 20px;
+}
+.skills li {
+   width: 48%;
+   padding: 10px;
+   display: flex;
+   flex-direction: column;
+   background: #eee;
+   border-radius: 2px;
+   margin-bottom: 10px;
+   position: relative;
+}
+.skills li .skill{
+   line-height: 30px;
+   font-weight: bolder;
+}
+.skills li .description{
+   line-height: 30px;
+}
+.skills .addSkill  {
+   cursor: pointer;
+   text-align: center;
+   line-height: 75px;
+   padding: 0;
+}
+.skills span.remove {
+   cursor: pointer;    
+   position: absolute;
+   top: 3px;
+   right: 8px;
+}
+.skills span.remove:hover,
+.skills .addSkill:hover
+{
+   text-shadow:0px 0px 8px #888;
+}
+/* project */
+
+.projects {
+    display: flex;
+}
+.projects h3 {
+    padding: 10px;
+    min-height: 80px;
+    position: relative;
+    border-right: 2px solid #999;
+}
+.projects h3::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 20px;
+    height: 30px;
+    transform: translate(50% ,-50%);
+    background-color: #999;
+}
+.projects ul {
+    flex: 1;
+    flex-direction: column;
+    padding: 10px 10px 10px 20px;
+}
+.projects li {
+   border: 1px solid #999;
+   padding: 10px;
+   width: 100%;
+   margin-top: 20px;
+   position: relative;
+}
+.projects li .projectName{
+   font-weight: bold;
+}
+.projects .project .time {
+   padding-right: 10px;
+}
+.projects li .project {
+   display: flex;
+   justify-content: space-between;
+}
+.projects li .description {
+   line-height: 30px;
+}
+.projects span.remove {
+   cursor: pointer;    
+   position: absolute;
+   top: 3px;
+   right: 8px;
+}
+.projects .addProject  {
+   cursor: pointer;
+   text-align: center;
+   line-height: 75px;
+   padding: 0;
+}
+.projects span.remove:hover,
+.projects .addProject:hover
+{
+   text-shadow:0px 0px 8px #888;
+}
+
+/* credentials */
+
+.credentials {
+    display: flex;
+}
+.credentials h3 {
+    padding: 10px;
+    min-height: 80px;
+    position: relative;
+    border-right: 2px solid #999;
+}
+.credentials h3::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 20px;
+    height: 30px;
+    transform: translate(50% ,-50%);
+    background-color: #999;
+}
+.credentials ul {
+    flex: 1;
+    flex-direction: column;
+    padding: 10px 10px 10px 20px;
+}
+
+.credentials ul li {
+   position: relative;
+   display: flex;
+   justify-content: space-between;
+   padding-top: 6px;
+}
+.credentials ul li > span {
+   padding-right: 10px;
+   display: inline-block;
+}
+.credentials ul li span.credentialName {
+   font-weight: bold;
+   min-width: 100px;
+}
+.credentials ul li span.time {
+   min-width: 100px;    
+   padding-right: 20px;
+}
+.credentials ul li span.remove {
+   padding: 0;
+   cursor: pointer;    
+   position: absolute;
+   top: 3px;
+   right: 8px;
+}
+.credentials li.addCredential {
+   margin-top: 10px;
+   border-top: 1px solid #999;
+   cursor: pointer;
+   display: block;
+   text-align: center;
+}
+.credentials span.remove:hover,
+.credentials .addCredentials:hover
+{
+   text-shadow:0px 0px 8px #888;
+}

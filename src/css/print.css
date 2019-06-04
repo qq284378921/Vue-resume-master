@@ -1,0 +1,19 @@
+#app aside {
+    display: none;
+}
+#app .loginedUser,
+#app .close,
+#app .remove,
+#app .addSkill,
+#app .addProject,
+#app .addEducation,
+#app .addCredential{
+    display: none;
+}
+#app .resume {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+#app main {
+    background-color: #fff;
+}
+body {-webkit-print-color-adjust: exact;}

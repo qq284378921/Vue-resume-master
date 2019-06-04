@@ -1,0 +1,31 @@
+.shareWrap {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    color: #444;
+    z-index: 666;
+    background: rgba(0, 0, 0, .5);
+}
+.shareWrap .shareContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    width: 600px;
+    height: 200px;
+    padding: 50px auto;
+    background-color: #fff;
+    text-align: center;
+}
+.shareContent h3 {padding: 20px 0 ;}
+.shareContent input {
+    font-size: 16px;
+    width: 500px;
+}
+.shareContent .close {
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
